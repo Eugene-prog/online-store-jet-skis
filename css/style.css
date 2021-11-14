@@ -1,0 +1,395 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	display: inline-block;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+body {
+	color: #2f3035;
+	font-family: "SFProDisplay-Regular", sans-serif;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.page-section {
+	margin-bottom: 80px;
+}
+
+.header__top-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 122px;
+	font-family: "SFProDisplay-Bold", sans-serif;
+	font-weight: 700;
+}
+
+.menu__item {
+	display: inline-block;
+}
+
+.menu__item + .menu__item {
+	padding-left: 50px;
+}
+
+.header__box {
+	display: flex;
+}
+
+.header__adress {
+	margin-right: 60px;
+	width: 265px;
+	padding-left: 30px;
+	position: relative;
+}
+
+.header__adress::before {
+	content: "";
+	position: absolute;
+	background-image: url("../images/adress-icon.svg");
+	width: 30px;
+	height: 30px;
+	left: 0;
+	top: -10px;
+}
+
+.user-list {
+	margin-right: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.user-list__item {
+	padding-right: 10px;
+}
+
+.basket {
+	position: relative;
+}
+
+.basket__num {
+	position: absolute;
+	font-family: "SFProDisplay-Medium", sans-serif;
+	font-weight: 500;
+	color: #fff;
+	font-size: 10px;
+	line-height: 20px;
+	width: 20px;
+	height: 20px;
+	background-color: #1c62cd;
+	border-radius: 50%;
+	text-align: center;
+	bottom: -14px;
+	right: -15px;
+}
+
+/* .header__bottom {
+	margin-bottom: 78px;
+} */
+
+.menu-categories {
+	background-color: #f0f0f4;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 53px;
+}
+
+.menu-categories__item {
+	position: relative;
+}
+
+.menu-categories__link {
+	transition: all 0.2s;
+	font-weight: 400;
+	padding: 15px 0 14px;
+	position: relative;
+	/* position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+}
+
+.menu-categories__link:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	right: 0;
+	left: auto;
+	background-color: #1c62cd;
+	height: 3px;
+	bottom: -2px;
+	transition: all 0.3s;
+}
+
+.menu-categories__link:hover {
+	/* font-family: "SFProDisplay-Semibold", sans-serif;
+	font-weight: 600; */
+	color: black;
+}
+
+.menu-categories__link:hover::before {
+	width: 100%;
+	right: auto;
+	left: 0;
+}
+
+.banner-section__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.banner-section__slider {
+	max-width: 870px;
+}
+
+.banner-section__slider-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: transparent;
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	z-index: 5;
+	cursor: pointer;
+}
+
+.banner-section__slider-btnprev {
+	left: 20px;
+}
+
+.banner-section__slider-btnnext {
+	right: 20px;
+}
+
+.slick-dots {
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.slick-dots li {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.slick-dots button {
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+	width: 11px;
+	height: 11px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	background: transparent;
+}
+
+.slick-active button {
+	background: #fff;
+}
+
+.sale-item {
+	max-width: 265px;
+	text-align: center;
+	border: 1px solid #cdcdcd;
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.sale-item__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.sale-item__info {
+	color: #fff;
+	background-color: #1c62cd;
+	padding: 8px 20px;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 15px;
+	letter-spacing: 0.1em;
+}
+
+.sale-item__price {
+	text-align: right;
+}
+
+.price {
+	font-family: "Barlow", sans-serif;
+}
+
+.sale-item__price-new {
+	font-weight: 700;
+	font-size: 27px;
+	color: #1c62cd;
+	line-height: 32px;
+	margin-right: 6px;
+	padding-right: 20px;
+	position: relative;
+}
+
+.sale-item__price-new::after {
+	content: "";
+	background-image: url("../images/icons-price.svg");
+	position: absolute;
+	right: 1px;
+	top: 8px;
+	width: 15px;
+	height: 18px;
+}
+
+.sale-item__price-old {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #c4c4c4;
+	margin-right: 15px;
+	background-image: url("../images/old-line.svg");
+	padding: 2px 5px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	position: relative;
+}
+
+.sale-item__price-old::after {
+	content: "";
+	background-image: url("../images/icons-price-old.svg");
+	background-repeat: no-repeat;
+	position: absolute;
+	right: -10px;
+	top: 8px;
+	width: 10px;
+	height: 10px;
+}
+
+.sale-item__footer {
+	background-color: #f0f0f4;
+	padding: 25px 20px;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.sale-item__footer span {
+	color: #1c62cd;
+	display: block;
+	font-family: "Barlow", sans-serif;
+	font-weight: 700;
+}
+
+.sale-item__title {
+	font-size: 18px;
+	line-height: 21px;
+	font-family: "SFProDisplay-Bold", sans-serif;
+	font-weight: 700;
+	margin-bottom: 7px;
+}
+
+.banner-section__slider-img {
+	object-fit: cover;
+	min-height: 400px;
+}
+
+.sale-item__img {
+	object-fit: contain;
+}
+
+.search__tabs {
+	margin-bottom: 25px;
+}
+
+.search__tabs-item {
+	padding: 11px 26px 12px;
+}
+
+.search__tabs-item--active {
+	border-radius: 5px;
+	background: #f0f0f4;
+	font-weight: 700;
+	font-family: "SFProDisplay-Bold", sans-serif;
+}
+
+.search__content-item {
+	display: none;
+}
+
+.search__content-item--active {
+	display: block;
+}
+
+.search__content-form {
+	display: flex;
+}
+
+.search__content-input {
+	background: #f0f0f4;
+	border-radius: 3px;
+	padding: 5px 20px;
+	border: none;
+	font-weight: normal;
+	line-height: 19px;
+	font-size: 16px;
+	width: 100%;
+}
+.search__content-input::placeholder {
+	color: #656464;
+}
+
+.search__content-btn {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: "SFProDisplay-Bold", sans-serif;
+	background: #1c62cd;
+	border-radius: 3px;
+	padding: 17px 41px;
+	border: none;
+	margin-left: -3px;
+}
