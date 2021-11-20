@@ -167,18 +167,18 @@
 			<div class="container">
 				<div class="search__inner">
 					<div class="search__tabs">
-						<a class="search__tabs-item search__tabs-item--active" href="#tab-1"
+						<a class="tab search__tabs-item tab--active" href="#tab-1"
 							>Поиск по номеру</a
 						>
-						<a class="search__tabs-item" href="#tab-2">Поиск по марке</a>
-						<a class="search__tabs-item" href="#tab-3"
+						<a class="tab search__tabs-item" href="#tab-2">Поиск по марке</a>
+						<a class="tab search__tabs-item" href="#tab-3"
 							>Поиск по названию товара</a
 						>
 					</div>
 					<div class="search__content">
 						<div
 							id="tab-1"
-							class="search__content-item search__content-item--active"
+							class="tabs-content search__content-item tabs-content--active"
 						>
 							<form class="search__content-form">
 								<input
@@ -192,7 +192,7 @@
 							</form>
 						</div>
 
-						<div id="tab-2" class="search__content-item">
+						<div id="tab-2" class="tabs-content search__content-item">
 							<form class="search__content-form">
 								<input
 									class="search__content-input"
@@ -205,7 +205,7 @@
 							</form>
 						</div>
 
-						<div id="tab-3" class="search__content-item">
+						<div id="tab-3" class="tabs-content search__content-item">
 							<form class="search__content-form">
 								<input
 									class="search__content-input"
@@ -283,9 +283,67 @@
 				</div>
 			</div>
 		</section>
+		<section class="products">
+			<div class="container">
+				<div class="products__inner">
+					<div class="tabs-wrapper">
+						<div class="tabs products__tabs">
+							<a class="tab products__tab tab--active" href="#">запчасти</a>
+							<a class="tab products__tab" href="#">моторы</a>
+							<a class="tab products__tab" href="#">шины</a>
+							<a class="tab products__tab" href="#">электроника</a>
+							<a class="tab products__tab" href="#">инструменты</a>
+							<a class="tab products__tab" href="#">аксессуары</a>
+						</div>
+						<div class="tabs-container products__cotainer">
+							<div class="tabs-content products__content tabs-content--active">
+								<div class="product-slider">
+									<div class="product-slider__slider__item">
+										<div class="product-item__wrapper">
+											<button class="product-item__favorite"></button>
+											<button class="product-item__basket">
+												<!-- <img src="images/basket-white.svg" alt="" /> -->
+											</button>
+											<a class="product-item" href="#">
+												<p class="product-item__hover-text">посмотреть товар</p>
+												<img
+													class="product-item__img"
+													src="images/product-1.png"
+													alt=""
+												/>
+												<h4 class="product-item__title">
+													Водонепроницаемый Рюкзак
+												</h4>
+												<p class="price product-item__price">9 800 ₽</p>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-content products__content"></div>
+							<div class="tabs-content products__content"></div>
+							<div class="tabs-content products__content"></div>
+							<div class="tabs-content products__content"></div>
+							<div class="tabs-content products__content"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="js/slick.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
+
+<!-- 
+<div class="tabs-wrapper">
+	<div class="tabs">
+		<a class="tab tab--active" href="#"></a>
+	</div>
+	<div class="tabs-container">
+		<div class="tabs-content"></div>
+	</div>
+</div> 
+-->
