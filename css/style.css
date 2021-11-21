@@ -346,7 +346,7 @@ body {
 	padding: 11px 26px 12px;
 }
 
-.search__tabs-item--active {
+.search__tabs-item.tab--active {
 	border-radius: 5px;
 	background: #f0f0f4;
 	font-weight: 700;
@@ -357,7 +357,7 @@ body {
 	display: none;
 }
 
-.search__content-item--active {
+.search__content-item.tabs-content--active {
 	display: block;
 }
 
@@ -452,4 +452,99 @@ body {
 .categories__item-text::after {
 	content: url("../images/link-arrow.svg");
 	padding-left: 2px;
+}
+
+.product-item__wrapper {
+	position: relative;
+	width: 271px;
+}
+
+.product-item {
+	border: 1px solid #cdcdcd;
+	border-radius: 3px;
+	text-align: center;
+	padding: 52px 20px 31px;
+	transition: all 0.3s;
+}
+
+.product-item__title {
+	font-weight: normal;
+	padding: 14px 0 25px;
+}
+
+.product-item__favorite {
+	position: absolute;
+	top: 16px;
+	right: 19px;
+	width: 24px;
+	height: 22px;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	z-index: 5;
+}
+
+.product-item__favorite::before {
+	content: "";
+	position: absolute;
+	background-image: url("../images/favorite.svg");
+	width: 24px;
+	height: 22px;
+	top: 0;
+	left: 0;
+}
+
+.product-item__favorite--active {
+	background-image: url("../images/favorite-active.svg");
+}
+
+.product-item__price {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.product-item__basket {
+	position: absolute;
+	width: 60px;
+	height: 40px;
+	background-color: #fff;
+	background: #1c62cd;
+	border-radius: 10px 0 0 0;
+	border: none;
+	bottom: 0;
+	right: 0;
+}
+
+.product-item__basket::before {
+	content: "";
+	background-image: url("../images/basket-white.svg");
+	width: 30px;
+	height: 23px;
+	background-repeat: no-repeat;
+	top: 10px;
+	left: 14px;
+	position: absolute;
+}
+
+.product-item__hover-text {
+	padding: 18px 21px;
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	display: inline-block;
+	position: absolute;
+	top: 30%;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.product-item:hover .product-item__hover-text {
+	opacity: 1;
+	color: #2f3035;
+}
+
+.product-item:hover {
+	box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+	color: #1c62cd;
 }
