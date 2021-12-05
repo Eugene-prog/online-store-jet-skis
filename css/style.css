@@ -898,3 +898,77 @@ body {
 .pagination-list__item a {
 	display: block;
 }
+
+.aside-filter__tabs {
+	display: flex;
+	justify-content: space-between;
+}
+
+.aside-filter__tab {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	color: #c4c4c4;
+	width: 50%;
+}
+
+.aside-filter__tab.tab--active {
+	font-family: "SFProDisplay-Bold", sans-serif;
+	font-weight: bold;
+	color: #2f3035;
+}
+
+.aside-filter__tab.tab--active span {
+	display: inline-block;
+	padding-bottom: 7px;
+	border-bottom: 2px solid #9b9c9e;
+}
+
+.aside-filter__item-drop {
+	margin: 40px 0;
+}
+
+.aside-filter__item-title {
+	font-family: "SFProDisplay-Semibold", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	padding-left: 26px;
+}
+
+.filter__item-drop {
+	margin-bottom: 20px;
+	position: relative;
+	cursor: pointer;
+}
+
+.filter__item-drop::before {
+	content: "";
+	background-image: url("../images/arrow-down.svg");
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+	width: 12px;
+	height: 8px;
+	transform: rotate(0deg);
+}
+
+.filter__item-drop--active::before {
+	transform: rotate(180deg);
+}
+
+.aside-filter__content {
+	display: flex;
+}
+
+.aside-filter__content-box {
+	width: 50%;
+}
+
+.aside-filter__content-label {
+	font-size: 14px;
+	line-height: 17px;
+	cursor: pointer;
+}

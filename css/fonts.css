@@ -11,7 +11,7 @@
 	font-family: "SFProDisplay-Medium", sans-serif;
 	src: url("../fonts/SFProDisplay-Medium.woff2") format ("woff2"),
 		url("../fonts/SFProDisplay-Medium.woff") format ("woff");
-	font-weight: 400;
+	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
 }
@@ -20,7 +20,7 @@
 	font-family: "SFProDisplay-Semibold", sans-serif;
 	src: url("../fonts/SFProDisplay-Semibold.woff2") format ("woff2"),
 		url("../fonts/SFProDisplay-Semibold.woff") format ("woff");
-	font-weight: 400;
+	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
 }
@@ -29,7 +29,7 @@
 	font-family: "SFProDisplay-Bold", sans-serif;
 	src: url("../fonts/SFProDisplay-Bold.woff2") format ("woff2"),
 		url("../fonts/SFProDisplay-Bold.woff") format ("woff");
-	font-weight: 400;
+	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
 }
