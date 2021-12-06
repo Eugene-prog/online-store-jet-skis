@@ -15,6 +15,8 @@ $(function () {
 		);
 		$(this).addClass("tab--active");
 		$($(this).attr("href")).addClass("tabs-content--active");
+
+		//$("#params").addClass("tabs-content--active");
 	});
 
 	$(".product-item__favorite").on("click", function () {
@@ -35,5 +37,11 @@ $(function () {
 	$(".filter__item-drop").on("click", function () {
 		$(this).toggleClass("filter__item-drop--active");
 		$(this).next().slideToggle("200");
+	});
+
+	$(".js-range-slider").ionRangeSlider({
+		type: "double",
+		min: 100000,
+		max: 500000,
 	});
 });
