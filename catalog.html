@@ -215,10 +215,10 @@
 					<aside class="catalog__inner-aside aside-filter">
 						<div class="tabs-wrapper">
 							<div class="tabs aside-filter__tabs">
-								<a class="tab aside-filter__tab tab--active" href="#"
+								<a class="tab aside-filter__tab tab--active" href="#params"
 									><span>Параметры</span></a
 								>
-								<a class="tab aside-filter__tab" href="#"
+								<a class="tab aside-filter__tab" href="#mark"
 									><span> по марке</span></a
 								>
 							</div>
@@ -229,6 +229,7 @@
 										aside-filter__tabs-content
 										tabs-content--active
 									"
+									id="params"
 								>
 									<form class="aside-filter__form">
 										<ul class="aside-filter__list">
@@ -251,13 +252,70 @@
 													</div>
 												</div>
 											</li>
-											<li class="aside-filter__item-drop"></li>
-											<li class="aside-filter__item-drop"></li>
+											<li class="aside-filter__item-drop">
+												<p class="aside-filter__item-title filter__item-drop">
+													Новинки
+												</p>
+												<div
+													class="
+														aside-filter__content aside-filter__content-radio
+													"
+												>
+													<div class="aside-filter__content-box">
+														<label class="aside-filter__content-label">
+															<input
+																class="filter-style"
+																name="radio"
+																type="radio"
+															/>
+															Все
+														</label>
+													</div>
+													<div class="aside-filter__content-box">
+														<label class="aside-filter__content-label">
+															<input
+																class="filter-style"
+																name="radio"
+																type="radio"
+															/>
+															Новинки
+														</label>
+													</div>
+													<div class="aside-filter__content-box">
+														<label class="aside-filter__content-label">
+															<input
+																class="filter-style"
+																name="radio"
+																type="radio"
+															/>
+															Акции
+														</label>
+													</div>
+												</div>
+											</li>
+											<li class="aside-filter__item-drop">
+												<p class="aside-filter__item-title filter__item-drop">
+													Цена
+												</p>
+												<div class="aside-filter__content">
+													<input
+														type="text"
+														class="js-range-slider"
+														name="my_range"
+														value=""
+														data-min="100000"
+														data-max="500000"
+														data-from="150000"
+														data-to="400000"
+													/>
+												</div>
+											</li>
+
 											<li class="aside-filter__item-list"></li>
 										</ul>
 									</form>
 								</div>
-								<div class="tabs-content aside-filter__tabs-content">
+								<div class="tabs-content aside-filter__tabs-content" id="mark">
 									content-2
 								</div>
 							</div>
