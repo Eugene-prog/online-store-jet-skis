@@ -120,10 +120,6 @@ body {
 	right: -12px;
 }
 
-/* .header__bottom {
-	margin-bottom: 78px;
-} */
-
 .menu-categories {
 	background-color: #f0f0f4;
 	display: flex;
@@ -141,10 +137,6 @@ body {
 	font-weight: 400;
 	padding: 15px 0 14px;
 	position: relative;
-	/* position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%); */
 }
 
 .menu-categories__link:before {
@@ -160,8 +152,6 @@ body {
 }
 
 .menu-categories__link:hover {
-	/* font-family: "SFProDisplay-Semibold", sans-serif;
-	font-weight: 600; */
 	color: black;
 }
 
@@ -461,7 +451,6 @@ body {
 
 .product-item__wrapper {
 	position: relative;
-	/* max-width: 271px; */
 }
 
 .product-item__wrapper.product-item__wrapper--list {
@@ -473,7 +462,7 @@ body {
 	border: 1px solid #cdcdcd;
 	border-radius: 3px;
 	text-align: center;
-	padding: 50px 10px 10px; /*10-20?*/
+	padding: 50px 10px 10px;
 	transition: all 0.3s;
 	width: 100%;
 }
@@ -976,7 +965,6 @@ body {
 .filter__item-drop {
 	position: relative;
 	cursor: pointer;
-	/* margin-bottom: 20px; */
 }
 
 .filter__item-drop::before {
@@ -1108,7 +1096,6 @@ body {
 	top: 25px;
 	height: 3px;
 	background-color: #1c62cd;
-	/* border: 3px solid #1c62cd; */
 }
 
 .irs--flat .irs-handle {
