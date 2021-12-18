@@ -9,9 +9,9 @@ html {
 }
 
 a {
-	text-decoration: underline;
+	text-decoration: none;
 	color: inherit;
-	display: block;
+	display: inline-block;
 }
 
 ul,
