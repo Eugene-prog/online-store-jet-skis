@@ -11,7 +11,7 @@ html {
 a {
 	text-decoration: underline;
 	color: inherit;
-	display: inline-block;
+	display: block;
 }
 
 ul,
